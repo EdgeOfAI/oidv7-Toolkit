@@ -14,15 +14,18 @@ pip3 install -r requirements.txt  # install
 ```
 ### Download Custom Dataset
 
+
 Choose class names from [Available classes](https://github.com/EdgeOfAI/oidv7-Downloader/blob/main/class_names.csv) and provide choosen class names to the required argument
 
 Required argument:
   - classes
 
 
+
+
 Change optional arguments to set custom bounding box parameters
 
-All Optinal arguments have default 0 value
+All Optional arguments equal to 0 as a default value 
 
 Optional arguments:
   - isOcclud
@@ -32,6 +35,27 @@ Optional arguments:
   - isInside
 
 
+Run main.py to download dataset for custom classes
 ```bash
 python3 main.py --classes Car Person # downloads dataset for Car and Person classes with default parameters
 ```
+
+The algorithm will take care to download all the necessary files and build the directory structure like this:
+```
+main_folder
+│   main.py
+│
+└───dataset
+    │   img_ids.txt
+    │
+    └───images
+    |    │   0fdea8a716155a8e.jpg
+    |    │   2fe4f21e409f0a56.jpg
+    |    |   ...
+    |
+    └───labels
+        |    0fdea8a716155a8e.txt
+        |    2fe4f21e409f0a56.txt
+        |    ...
+```  
+
