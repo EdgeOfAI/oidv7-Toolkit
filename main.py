@@ -93,6 +93,6 @@ if __name__ == "__main__":
     #Downloading labels and creating folders for data
     PrepareFolders()
 
-    # ExtractData("oidv6-train.csv", 'train', args).Download()
+    ExtractData("oidv6-train.csv", 'train', args).Download()
     ExtractData("oidv7-validation.csv", 'validation', args).Download()
-    # ExtractData("oidv7-test.csv", 'test', args).Download()
+    ExtractData("oidv7-test.csv", 'test', args).Download()
