@@ -27,24 +27,19 @@ class ExtractData:
 
         labels = dict()
         img_ids = set()
-        counter = 0
         #TODO : add image counter and class counter 
         for line in lines:
-            if counter == 1000:
-                break
             
             info = line.split(',')
             img_id, class_name, xmin, xmax, ymin, ymax = info[0], info[2], info[4], info[5], info[6], info[7]
             img_params = info[8:]
             img_params[4] = img_params[4][0]
             ismatched = True
-            print(counter)
             for i in range(5):
                 if img_params[i] != required_params[i] and required_params[i] != '2':
                     ismatched = False
             
             if (class_name in class_names) and ismatched:
-                counter += 1
                 img_ids.add(img_id)
                 if not img_id in labels:
                     labels[img_id] = []
