@@ -25,7 +25,7 @@ Required argument:
 
 Change optional arguments to set custom bounding box parameters
 
-All Optional arguments equal to 0 as a default value 
+All Optional arguments equal to 2 as a default value 
 
 Optional arguments:
   - isOcclud

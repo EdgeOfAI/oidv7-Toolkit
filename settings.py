@@ -16,14 +16,14 @@ def PrepareFolders():
 
     #Download annonation files
     files = os.listdir()
-    if not "oidv6-train.csv" in files:
-        urllib.request.urlretrieve("https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv", "oidv6-train.csv")
+    # if not "oidv6-train.csv" in files:
+    #     urllib.request.urlretrieve("https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv", "oidv6-train.csv")
 
     if not "oidv7-validation.csv" in files:
         urllib.request.urlretrieve("https://storage.googleapis.com/openimages/v5/validation-annotations-bbox.csv", "oidv7-validation.csv")
 
-    if not "oidv7-test.csv" in files:
-        urllib.request.urlretrieve("https://storage.googleapis.com/openimages/v5/test-annotations-bbox.csv", "oidv7-test.csv")
+    # if not "oidv7-test.csv" in files:
+    #     urllib.request.urlretrieve("https://storage.googleapis.com/openimages/v5/test-annotations-bbox.csv", "oidv7-test.csv")
 
 
 def ParamSettings(params):
@@ -57,7 +57,7 @@ def ParamSettings(params):
             name = i
         else:
             name += " " + i
-    if len(name.split()) > 1:
+    if len(name.split()) > 0:
         if name in all_class_names:
             required_class_names[name] = all_class_names[name]
         else:
