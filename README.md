@@ -4,18 +4,18 @@ Download dataset for custom classes from [Open Images Dataset V7](https://storag
 ## <div align="center">Documentation</div>
 
 ### Installation
-Clone repo and install [requirements.txt](https://github.com/EdgeOfAI/oidv7-Downloader/blob/main/requirements.txt) in a
+Clone repo and install [requirements.txt](https://github.com/EdgeOfAI/oidv7-Tooklit/blob/main/requirements.txt) in a
 [**Python>=3.7.0**](https://www.python.org/) environment
 
 ```bash
-git clone https://github.com/EdgeOfAI/oidv7-Downloader.git  # clone
-cd oidv7-Downloader
+git clone https://github.com/EdgeOfAI/oidv7-Tooklit.git  # clone
+cd oidv7-Toolkit
 pip3 install -r requirements.txt  # install
 ```
 ### Download Custom Dataset
 
 
-Choose class names from [Available classes](https://github.com/EdgeOfAI/oidv7-Downloader/blob/main/class_names.csv) and provide choosen class names to the required argument
+Choose class names from [Available classes](https://github.com/EdgeOfAI/oidv7-Tooklit/blob/main/class_names.csv) and provide choosen class names to the required argument
 
 Required argument:
   - classes
