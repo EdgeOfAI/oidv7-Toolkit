@@ -1,5 +1,5 @@
-# oidv7-Downloader
-Download subdataset of Open Images Dataset V7
+# <div align="center">Open Images V7  ToolKit</div>
+Download dataset for custom classes from [Open Images Dataset V7](https://storage.googleapis.com/openimages/web/index.html)
 
 ## <div align="center">Documentation</div>
 
