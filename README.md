@@ -15,7 +15,7 @@ pip3 install -r requirements.txt  # install
 ### Download Custom Dataset
 
 
-Choose class names from [Available classes](https://github.com/EdgeOfAI/oidv7-Tooklit/blob/main/class_names.csv) and provide choosen class names to the required argument
+Choose class names from [Available classes](https://github.com/EdgeOfAI/oidv7-Tooklit/blob/main/class_names.csv) and provide them to the required argument
 
 Required argument:
   - classes
